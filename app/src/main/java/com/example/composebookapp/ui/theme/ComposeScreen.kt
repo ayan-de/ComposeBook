@@ -45,7 +45,7 @@ import com.example.composebookapp.data.tabItem
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun ComposeScreen(
+fun ComponentScreen(
     composeViewModel: ComposeViewModel = viewModel()
 ) {
     var pagerState = rememberPagerState {
@@ -144,6 +144,6 @@ fun Component(modifier: Modifier, text: String = "Primary", icon:Boolean) {
 @Composable
 fun ComposeScreenPreview() {
     ComposeBookAppTheme {
-        ComposeScreen()
+        ComponentScreen()
     }
 }

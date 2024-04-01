@@ -15,8 +15,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.composebookapp.ui.theme.ComponentScreen
 import com.example.composebookapp.ui.theme.ComposeBookAppTheme
-import com.example.composebookapp.ui.theme.ComposeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     //Switch(checked = darkMode, onCheckedChange = {darkMode = !darkMode})
-                    ComposeScreen()
+                    ComponentScreen()
                 }
             }
         }
