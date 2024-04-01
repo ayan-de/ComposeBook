@@ -62,7 +62,7 @@ fun ComponentScreen(
                     contentAlignment = Alignment.Center
                 ) {
                     Component(
-                        text = composeViewModel.buttonName,
+                        text = composeViewModel.buttonName ,
                         icon = composeViewModel.iconButton.value
                     )
                 }
@@ -90,6 +90,7 @@ fun ComponentScreen(
         ) { index ->
             Box(
                 modifier = Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
             ) {
                 when (composeViewModel.selectedTabIndex) {
                     0 -> TableScreen()
@@ -102,7 +103,7 @@ fun ComponentScreen(
 }
 
 @Composable
-fun Component(text: String = "Primary", icon: Boolean) {
+fun Component(text: String , icon: Boolean) {
     //Text(text = "Here Comes the composable ")
     ComponentList(
         onClick = {},
