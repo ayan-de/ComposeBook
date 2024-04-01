@@ -1,7 +1,6 @@
 package com.example.composebookapp.ui.theme
 
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.ShoppingCart
 import androidx.compose.material.icons.rounded.Star
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonColors

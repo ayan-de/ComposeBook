@@ -23,7 +23,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 @Composable
 fun TableScreen(
     modifier: Modifier = Modifier,
-    composeViewModel: ComposeViewModel = viewModel()
+    composeViewModel: ComponentViewModel = viewModel()
 ) {
     LazyColumn(
         modifier = modifier
