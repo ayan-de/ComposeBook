@@ -15,7 +15,7 @@ import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.Shape
 
 @Composable
-fun ComposableList(
+fun ComponentList(
     onClick:() ->Unit,
     shape: Shape = RectangleShape,
     color: ButtonColors = ButtonDefaults.buttonColors(Color.Red),

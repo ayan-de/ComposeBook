@@ -9,19 +9,13 @@ val tabItemData = listOf (
     tabItem(
         index = 0,
         title = "Control",
-//        unselectedItem = Icons.Outlined.Home,
-//        selectedItem = Icons.Filled.Home,
     ),
     tabItem(
         index = 1,
         title = "Action",
-//        unselectedItem = Icons.Outlined.Home,
-//        selectedItem = Icons.Filled.Home,
     ),
     tabItem(
         index = 2,
         title = "Accebility",
-//        unselectedItem = Icons.Outlined.Home,
-//        selectedItem = Icons.Filled.Home,
     )
 )

@@ -80,7 +80,7 @@ fun ComposeScreen(
                         .weight(1f),
                     contentAlignment = Alignment.Center
                 ) {
-                    Composables(
+                    Component(
                         modifier = Modifier,
                         text = composeViewModel.buttonName,
                         icon = composeViewModel.iconButton.value
@@ -128,9 +128,9 @@ fun ComposeScreen(
 //}
 
 @Composable
-fun Composables(modifier: Modifier, text: String, icon:Boolean) {
+fun Component(modifier: Modifier, text: String = "Primary", icon:Boolean) {
     //Text(text = "Here Comes the composable ")
-    ComposableList(
+    ComponentList(
         onClick = {},
         color = ButtonDefaults.buttonColors(Color.Blue),
         shape = CutCornerShape(10),
