@@ -16,6 +16,6 @@ val tabItemData = listOf (
     ),
     tabItem(
         index = 2,
-        title = "Accebility",
+        title = "Accessibility",
     )
 )
