@@ -63,7 +63,6 @@ fun ComponentScreen(
                     contentAlignment = Alignment.Center
                 ) {
                     Component(
-                        modifier = Modifier,
                         text = composeViewModel.buttonName,
                         icon = composeViewModel.iconButton.value
                     )
@@ -110,7 +109,7 @@ fun ComponentScreen(
 //}
 
 @Composable
-fun Component(modifier: Modifier, text: String = "Primary", icon:Boolean) {
+fun Component(text: String = "Primary", icon:Boolean) {
     //Text(text = "Here Comes the composable ")
     ComponentList(
         onClick = {},
