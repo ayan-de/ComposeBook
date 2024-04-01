@@ -15,10 +15,10 @@ import androidx.compose.ui.graphics.Shape
 
 @Composable
 fun ComponentList(
+    modifier: Modifier = Modifier,
     onClick:() ->Unit,
     shape: Shape = RectangleShape,
     color: ButtonColors = ButtonDefaults.buttonColors(Color.Red),
-    modifier: Modifier = Modifier,
     text:String = "Primary",
     icon: Boolean = true
 ){
