@@ -33,7 +33,6 @@ fun ComponentScreen(
     val pagerState = rememberPagerState {
         tabItemData.size
     }
-
     LaunchedEffect(composeViewModel.selectedTabIndex) {
         pagerState.animateScrollToPage(composeViewModel.selectedTabIndex)
     }
@@ -42,7 +41,6 @@ fun ComponentScreen(
             composeViewModel.selectedTabIndex = pagerState.currentPage
         }
     }
-
     Column(
         modifier = Modifier
             .fillMaxSize(),
@@ -55,7 +53,8 @@ fun ComponentScreen(
                 modifier = Modifier.fillMaxWidth(),
                 color = MaterialTheme.colorScheme.background
             ) {
-                Switch(checked = composeViewModel.darkMode, onCheckedChange = { composeViewModel.darkMode = !composeViewModel.darkMode })
+                Switch(checked = composeViewModel.darkMode,
+                    onCheckedChange = { composeViewModel.darkMode = !composeViewModel.darkMode })
                 Box(
                     modifier = Modifier
                         .fillMaxHeight(0.5f)
@@ -83,7 +82,6 @@ fun ComponentScreen(
                 )
             }
         }
-
         HorizontalPager(
             state = pagerState,
             modifier = Modifier
@@ -92,13 +90,9 @@ fun ComponentScreen(
         ) { index ->
             Box(
                 modifier = Modifier.fillMaxSize(),
-                //contentAlignment = Alignment.Center
             ) {
-                //Text(text = tabItemData[index].title)
                 when (composeViewModel.selectedTabIndex) {
-                    0 -> TableScreen(
-//                        name = composeViewModel.buttonName,
-                    )
+                    0 -> TableScreen()
                     1 -> Text(text = tabItemData[index].title)
                     2 -> Text(text = tabItemData[index].title)
                 }
@@ -106,10 +100,9 @@ fun ComponentScreen(
         }
     }
 }
-//}
 
 @Composable
-fun Component(text: String = "Primary", icon:Boolean) {
+fun Component(text: String = "Primary", icon: Boolean) {
     //Text(text = "Here Comes the composable ")
     ComponentList(
         onClick = {},
