@@ -30,7 +30,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 fun ComponentScreen(
     composeViewModel: ComponentViewModel = viewModel()
 ) {
-    var pagerState = rememberPagerState {
+    val pagerState = rememberPagerState {
         tabItemData.size
     }
 
