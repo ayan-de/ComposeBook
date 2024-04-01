@@ -25,7 +25,7 @@ fun TableScreen(
         items(rowItemData.size) { i ->
             //rowItemData.forEach {
             when (rowItemData[i].rowName) {
-                "Name" -> {
+                "text" -> {
                     RowCell(
                         text = rowItemData[i].rowName,
                         value = composeViewModel.buttonName,
