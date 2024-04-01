@@ -9,9 +9,3 @@ val rowItemData: List<RowItems> = mutableListOf(
     RowItems("Name","enter the name"),
     RowItems("icon","")
 )
-
-//val rowItemData = mutableListOf(
-//    "onnClick",
-//    "colour",
-//    "size"
-//)
