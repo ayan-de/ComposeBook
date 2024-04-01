@@ -24,22 +24,26 @@ fun TableScreen(
     ) {
         items(rowItemData.size) { i ->
             //rowItemData.forEach {
-            if (rowItemData[i].rowName == "Name") {
-                RowCell(
-                    text = rowItemData[i].rowName,
-                    value = composeViewModel.buttonName,
-                    onValueChange = { composeViewModel.buttonName = it })
-            } else if (rowItemData[i].rowName == "icon") {
-                RowCell(
-                    text = rowItemData[i].rowName,
-                    icon = true,
-                    checked = composeViewModel.iconButton.value,
-                    onCheckedChange = { composeViewModel.iconButton.value = it })
-            } else {
-                RowCell(
-                    text = rowItemData[i].rowName,
-                    value = rowItemData[i].rowTextField,
-                    onValueChange = {})
+            when (rowItemData[i].rowName) {
+                "Name" -> {
+                    RowCell(
+                        text = rowItemData[i].rowName,
+                        value = composeViewModel.buttonName,
+                        onValueChange = { composeViewModel.buttonName = it })
+                }
+                "icon" -> {
+                    RowCell(
+                        text = rowItemData[i].rowName,
+                        icon = true,
+                        checked = composeViewModel.iconButton.value,
+                        onCheckedChange = { composeViewModel.iconButton.value = it })
+                }
+                else -> {
+                    RowCell(
+                        text = rowItemData[i].rowName,
+                        value = rowItemData[i].rowTextField,
+                        onValueChange = {})
+                }
             }
             Spacer(modifier = Modifier.size(4.dp))
         }
