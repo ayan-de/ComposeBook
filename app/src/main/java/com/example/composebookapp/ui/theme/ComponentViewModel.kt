@@ -16,8 +16,5 @@ class ComponentViewModel : ViewModel() {
 
     var iconButton = mutableStateOf(false)
 
-    fun toggleSwitch(){
-        iconButton.value = !iconButton.value
-    }
 }
 
